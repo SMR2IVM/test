@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<!--Siempre hay que comprobar el "lang" y el "charset"-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -25,14 +26,45 @@
     <h5><a href="./capitulos.html#cap2">Capítulo 2</a></h5>
     <h5><a href="./capitulos.html#cap3">Capítulo 3</a></h5>
 
+    <h1>Listas</h1>
+    <h2>Lista Numerada</h2>
+    <!--ol es para listas numeradas-->
+    <ol>
+        <!--li es para cada elemento de la lista-->
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+    </ol>
+    <h2>Lista de Viñetas</h2>
+    <!--ul es para listas de viñetas-->
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+    </ul>
+
+    <!--para hacer una lista anidada tengo que poner un ul/ol (Si es o no numérica) dentro de un li de otra lista-->
+<h2>Lista Anidada</h2>
+<h3>Ciclos de Informática</h3>
+<ul>
+    <li>SMR</li>
+    <ul><li>15 alumnos</li></ul>
+    <li>ASIR</li>
+    <ul><li>15 alumnos</li></ul>
+</ul>
+
     <h1 style="color: red;">Vídeos:</h1>
     <video controls>
         <source src="./vids/mov_bbb.mp4" type="video/mp4">
-      Tu explorador de internet no soporta este formato de vídeo.
-      </video> 
-      <br>
-      <br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Iqx1y6tpYRI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        Tu explorador de internet no soporta este formato de vídeo.
+    </video>
+    <br>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Iqx1y6tpYRI" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
 
 </body>
