@@ -16,9 +16,16 @@ th{
 #celda_4{
     background-color: darkgreen;
 }
-
+.verde {
+    background-color: green;
+}
 .amarillo{
     background-color: yellow;
+    text-align: center;
+}
+th.amarillo{
+    background-color: yellow;
+    text-align: end;
 }
 .negrita{
     font-weight: bold;
