@@ -43,7 +43,7 @@ main{
     min-height: calc(100vh - 50px);
 }
 nav{
-    background-color: lightgray;
+    background-color: rgb(22, 22, 22);
     z-index: 2;
     text-align: right;
     position: fixed;
@@ -54,7 +54,7 @@ nav{
 }
 
 header{
-    background-color: lightgray;
+    background-color: rgb(22, 22, 22);
     padding: 4px;
     z-index: 2;
     text-align: center;
@@ -113,7 +113,7 @@ nav > a {
     margin: 8px;
 }
 nav > a:hover{
-    border-color: black;
+    border-color: rgb(196, 196, 0);
 }
 nav > a:visited{
     color: black;
@@ -130,6 +130,13 @@ nav > a , aside > a{
 }
 /*con una coma entre ambas reglas, haremos que los detalles se apliquen tanto al "a" de "nav" como al de "aside"*/
 
+#video_oculto {
+    display: none;
+}
+
+main:hover > #video_oculto {
+    display: inline;
+}
 /*
 aside = barra lateral
 main = contenido principal
