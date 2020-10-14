@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+aside{
+    background-color: steelblue;
+    padding: 5px;
+    z-index: 1;
+    border-right: solid;
+    border-width: 2px;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 15%;
+    height: calc(100vh - 50px);
+    /*calc permite poner dos medidas (relativas o absolutas) para que el "explorador" las aplique en cada ocasión*/
+    overflow: auto;
+}
+main{
+    background-color: teal;
+    padding-left: 5px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    width: 85%;
+    top: 50px;
+    min-height: calc(100vh - 50px);
+}
+nav{
+    background-color: lightgray;
+    z-index: 2;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: 50px;
+}
+
+header{
+    background-color: lightgray;
+    z-index: 2;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 50px;
+}
+
+aside a{
+
+}
+aside > a {
+    display: block;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 5px;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 2px;
+    border-radius: 40px;
+    text-align: center;
+    margin: 8px;
+}
+/*Con aside a ; todos los enlaces (a) que hay dentro de "aside" se verán afectados por lo escrito.
+Con aside > a ; solo se verán afectados los enlaces (a) HIJOS DIRECTOS (Ni nietos ni bisnietos...)*/
+
+aside > a:hover{
+    border-color: black;
+}
+aside > a:visited{
+    color: blue;
+}
+aside > h1{
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    padding-bottom: 10px;
+}
+
+/*:hover permie añadir una regla que solo se cumplirá cuando se pasa el cursor del ratón por encima del elemento anterior a :hover*/
+
+nav > a {
+    display: inline-block;
+    width: 120px;
+    color: black;
+    background-color: steelblue;
+    text-decoration: none;
+    padding: 5px;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 2px;
+    border-radius: 40px;
+    text-align: center;
+    margin: 8px;
+}
+nav > a:hover{
+    border-color: black;
+}
+nav > a:visited{
+    color: black;
+}
+nav > h1{
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    padding-bottom: 10px;
+}
+
+/*
+aside = barra lateral
+main = contenido principal
+nav = barra de navegación
+header = encabezado
+background-color = permite cambiar el color de fondo (Del elemento en el que lo introducimos)
+z-index: X = Nos permite controlar en que capa del eje "Z" (Profundidad) se encuentra el elemento.
+text-align: XXXXX; = Permite "alinear" el texto de el elemento en el que se encuentr ele comando (Center, rigth, left)
+position: XXXXX; = Permite establecer la posición del elemento (fixed=fija/absolute=lo posicionamos a mano y no tiene en cuenta los demás elementos/relative=valor por defecto.
+top: X; = top/left/width/height establece a que distancia de los márgenes estará el elemento. Puede fijarse en px; %; vh...
+comando: calc(X - Y); = calc permite poner dos medidas (relativas o absolutas) para que el "explorador" las aplique en cada ocasión
+padding-xxx: Y; = permite separar el contenido (Texto o imagen) del borde relativo en Y (px, %...). xxx = right, left, top...
+overflow: xxxxx; = permite que el elemento tenga una barra de scroll. xxxx = auto, u otros parametros...
+
+Con * (asterisco) antes de los corchetes { } nos referiremos a TODO el contenido.
+
+vh = vievport height o altura "de visionado" establece el valor en % según el alto de la ventana de visionado o móvil.
+vw = vievport weight o anchura de "visionado" igual que el vh pero a lo alto.
+*/
