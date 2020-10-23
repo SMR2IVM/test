@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lemonchiffon;
+}
+
+div {
+    background-color: steelblue;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+div:nth-of-type(4){
+    font-size: 2em;
+    order: -2;
+    flex-grow: 2;
+}
+/*
+flex-grow: x;
+    hace crecer el espacio de el elemento señalado a costa de los demás cuando ampliamos la pantalla.
+        1   crecen todos al mismo ritmo.
+        2   crece al ritmo 1/2 de ampliación del espacio.
+        3   crece al ritmo 3/2 del espacio....
+
+flex-shrink: 1; 
+    hace encoger a diferencia del flex grow.
+
+flex-basics: x;
+    crece solo en el espacio que necesite.
+
+Todos ellos crecen a lo alto o ancho dependiendo de si "flex-row" está en row o en column.
+*/
+div:nth-of-type(5){
+    font-size: 2em;
+    order: -1;
+    flex-shrink: 1;
+}
+/*
+order: x;
+    define el orden de los elementos mencionados.
+        -x serán los primeros.
+        0 es la base.
+        x serán los siguientes.
+        Ejemplo de orden común: -2 -1 0 1 2 3 4 5...
+*/
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 100vh;
+}
+
+/*Display: flex;  permite configurar de varias maneras el contenido que se halle en el grupo.
+flex-direction: xxxx;   permite configurar el flex de distintas maneras:
+    column     en columnas
+    row        en filas
+
+flex-wrap: xxxxx;
+    permite configurar el "row" de flex direction con distintos matices.
+        wrap    en filas columnadas
+    
+justify-content: xxxx;
+    permite "justificar" el contenido. el xxxx que se le ponga, limitará a donde se justifica el mismo.
+        center          justificado, pero centrado
+        left            justificado a la izquierda
+        rigth           justificado a la derecha
+        space-around    toma el espacio total, lo divide entre los huecos, pero calculaun hueco más y lo deja a cada lado.
+        space-evenly    
+        
+align-items: xxx;   Alinea la fila.
+    flex-end;       divide en líneas el contenido según el espacio disponible a lo alto, empezando desde abajo.
+    flex-start;     divide el líneas el contenido según el espacio disponible a lo alto, empezando desde arriba.  
+    baseline;       Alinea los elementos verticalmente a la línea del texto, (a su parte baja).
+    stretch;        Hace crecer los elementos a lo alto de la fila.
+
+align-content: xxx; Alinea los elementos dentro de la fila.
+    mismas opciones que el align-items.
+
+align-self: x;      
+    Permite a un elemento concreto alinearse a si mismo en donde se le indique.
+    Tiene preferencia sobre otros align, independientemente del orden css.
+        sus matices son los mismos que en el resto de aligns (Center, left...)
+*/

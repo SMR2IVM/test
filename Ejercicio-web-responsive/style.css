@@ -1,0 +1,65 @@
+/*Todos los Elementos*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Versión Móvil*/
+
+@media (max-width: 400px){
+    header{
+        padding: 15px;
+        position: fixed;
+        color: white;
+        text-align: center;
+        background-color: rgb(63, 0, 0);
+        height: 50px;
+        width: 100vw;
+        z-index: 1;
+    }
+    aside{
+        background-color: rgb(65, 65, 65);
+        position: fixed;
+        display: inline-block;
+        width: 50px;
+        height: calc( 100vh - 100px );
+        left: 0;
+        top: 50px;
+    }
+    main{
+        position: absolute;
+        top: 50px;
+        display: inline-block;
+        width: calc( 100vw - 60px );
+        min-height: calc( 100vh - 100px );
+        right: 0;
+    }
+    footer{
+        padding: 15px;
+        text-align: center;
+        color: white;
+        background-color: rgb(63, 0, 0);
+        width: 100vw;
+        height: 50px;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
+    }
+    aside > a {
+        display: block;
+        width: 100%;
+    }
+    aside > a > img{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    aside > a > p{
+        display: none;
+    }
+}
+
+
+
+/*Versión escritorio*/

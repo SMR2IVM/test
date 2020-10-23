@@ -1,0 +1,94 @@
+/*Todos los Elementos*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Versión Móvil*/
+
+@media (max-width: 400px){
+    header{
+        padding: 15px;
+        position: fixed;
+        color: white;
+        text-align: center;
+        background-color: rgb(63, 0, 0);
+        height: 50px;
+        width: 100vw;
+        z-index: 1;
+    }
+    aside{
+        background-color: rgb(65, 65, 65);
+        position: fixed;
+        display: inline-block;
+        width: 50px;
+        height: calc( 100vh - 100px );
+        left: 0;
+        top: 50px;
+        padding-top: 15px;
+    }
+    main{
+        position: absolute;
+        top: 50px;
+        display: inline-block;
+        width: calc( 100vw - 60px );
+        min-height: calc( 100vh - 100px );
+        right: 0;
+        padding: 1rem;
+        /*1em hace referencia a una medida "relativa" a lo que ocuparía "una M en la fuente de texto elegida"
+        1erm hace referencia a la medida de tamaño de M relativa AL PADRE del archivo, de manera que evitaremos que crezca por cada hijo
+        
+        "float: right" hace que el elemento "flote" en la posición señalada*/
+    }
+
+    section{
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    section:last-of-type{
+        margin-bottom: 0px;
+    }
+    section:nth-child(2){
+        background-color: crimson;
+    }
+    section:nth-child(3n){
+        background-color: steelblue;
+    }
+    /*":last-of-type" o "nth-child" permite seleccionar al último (o primero con first) de los elementos (o hijos) de la categoría para que solo les afecte a ellos.
+    "nth-child" afecta a los "hijos" de dicha sección
+    "last-of-type" (o first o...) afecta al elemento señalado individual o grupal.
+    "nth-child (x)" (o last of tipe) permite afectar al hijo nº X de la sección elegida.
+    nth-child (xn) permite afectar a cada x hijos dentro de su padre. (Si es 3, será el elemento 3, 6, 9, 12...)
+    Tambien se puede poner (even) para los pares, etc...*/
+    footer{
+        padding: 15px;
+        text-align: center;
+        color: white;
+        background-color: rgb(63, 0, 0);
+        width: 100vw;
+        height: 50px;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
+    }
+    aside > a {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    aside > a > img{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    aside > a > span{
+        display: none;
+    }
+}
+
+
+
+/*Versión escritorio*/

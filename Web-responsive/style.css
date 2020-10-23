@@ -18,43 +18,6 @@ aside{
     min-height: 50px;
 }
 
-footer{
-    display: none;
-}
-
-/*Versión para tablet*/
-
-@media (min-width:480px){
-    header, nav{
-        height: 50px;
-        display: inline-block;
-    }
-    
-    header{
-        width: 30%;
-    }
-
-    nav{
-        width: 70%;
-    }
-    
-    aside{
-        width: 30%;
-        min-height: calc(100vh - 50px);
-        display: inline-block;
-        vertical-align: top;
-    }
-    
-    main{
-        width: 70%;
-        min-height: calc(100vh - 50px);
-        display: inline-block;
-    }
-
-    footer{
-        display: none;
-    }
-}
 
 
 /*Versión para Escritorio*/
@@ -67,8 +30,9 @@ footer{
     }
     nav, aside, main{
         top: 50px;
-        bottom: 50px;
         min-height: calc(100vh - 100px);
+        display: inline-block;
+        position: relative;
     }
     aside{
         left: 0;
@@ -83,7 +47,7 @@ footer{
         width: 60%;
     }
     footer{
-        position: absolute;
+        position: relative;
         display: block;
         height: 50px;
         bottom: 0;
