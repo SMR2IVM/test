@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightyellow;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+#tabla-flex {
+    background-color: slategray;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px;
+}
+
+#tabla-flex>div {
+    flex-basis: 33.33%;
+    flex-grow: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px;
+}
+
+#tabla-flex>#total {
+    flex-basis: 66.66%;
+    flex-grow: 1;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.textocentrado {
+    text-align: center;
+    font-weight: bold;
+}
+.textoderecha{
+    text-align: right;
+}
