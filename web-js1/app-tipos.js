@@ -22,7 +22,7 @@ alert(2.5+4.5);
 //Tipo booleano (Que solo guardan dos valores: verdadero y falso)
 //True False
 //operaciones lógicas && (yes) || (no)
-//Funcionan igual que los operadores de multiplicación (+*+=+ +*-=-... etc)
+//El & prioriza el cierto, el || prioriza el falso (Si hay nuves Y humedad llueve vs Si hay nuves O humedad llueve... uno prioriza el verdadero por necesitar solo uno y el otro prioriza el falso al necesitar a todos)
 alert(true && false);
 alert(false || true);
 
