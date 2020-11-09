@@ -13,58 +13,127 @@
         <thead>
             <tr>
                 <th scope="row">Horario</th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miercoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
+                <th>
+                    <p id="movil">L</p>
+                    <p id="pantalla">Lunes</p>
+                </th>
+                <th>
+                    <p id="movil">M</p>
+                    <p id="pantalla">Martes</p>
+                </th>
+                <th>
+                    <p id="movil">X</p>
+                    <p id="pantalla">Miercoles</p>
+                </th>
+                <th>
+                    <p id="movil">J</p>
+                    <p id="pantalla">Jueves</p>
+                </th>
+                <th>
+                    <p id="movil">V</p>
+                    <p id="pantalla">Viernes</p>
+                </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th>15:30 - 16:20</th>
-                <td>EIE</td>
-                <td>EIE</td>
-                <td rowspan="2">AW</td>
-                <td>SI</td>
-                <td rowspan="2">SR</td>
+                <th>15:30 <br> 16:20</th>
+                <td class="eie">
+                    <abbr title="Empresa e Iniciativa Emprendedora" id="movil">EIE</abbr>
+                    <span id="pantalla">Empresa e Iniciativa <br>Emprendedora</span>
+                </td>
+                <td class="eie">
+                    <abbr title="Empresa e Iniciativa Emprendedora" id="movil">EIE</abbr>
+                    <span id="pantalla">Empresa e Iniciativa <br>Emprendedora</span>
+                </td>
+                <td rowspan="2" class="aw">
+                    <abbr title="Aplicaciones Web" id="movil">AW</abbr>
+                    <span id="pantalla">Aplicaciones Web</Span>
+                </td>
+                <td class="si">
+                    <abbr title="Seguridad informática" id="movil">SI</abbr>
+                    <span id="pantalla">Seguridad Informática</span>
+                </td>
+                <td rowspan="2" class="sr">
+                    <abbr title="Servicios en Red" id="movil">SR</abbr>
+                    <span id="pantalla">Servicios en Red</span>
+                </td>
             </tr>
             <tr>
-                <th>16:25 - 17 15</th>
-                <td>LEP</td>
-                <td rowspan="3">AW</td>
-                <td>EIE</td>
+                <th>16:25 <br> 17 15</th>
+                <td class="lep">
+                    <abbr title="Inglés" id="movil">LEP</abbr>
+                    <span id="pantalla">Inglés</span>
+                </td>
+                <td rowspan="3" class="aw">
+                    <abbr title="Aplicaciones Web" id="movil">AW</abbr>
+                    <span id="pantalla">Aplicaciones Web</Span>
+                </td>
+                <td class="eie">
+                    <abbr title="Empresa e Iniciativa Emprendedora" id="movil">EIE</abbr>
+                    <span id="pantalla">Empresa e Iniciativa <br>Emprendedora</span>
+                </td>
             </tr>
             <tr>
-                <th>17:20 - 18:10</th>
-                <td rowspan="2">SOR</td>
-                <td rowspan="2">SR</td>
-                <td rowspan="2">SOR</td>
-                <td rowspan="2">SI</td>
+                <th>17:20 <br> 18:10</th>
+                <td rowspan="2" class="sor">
+                    <abbr title="Sistemas Operativos en Red" id="movil">SOR</abbr>
+                    <span id="pantalla">Sistemas Operativos<br>en Red</span>
+                </td>
+                <td rowspan="2" class="sr">
+                    <abbr title="Servicios en Red" id="movil">SR</abbr>
+                    <span id="pantalla">Servicios en Red</span>
+                </td>
+                <td rowspan="2" class="sor">
+                    <abbr title="Sistemas Operativos en Red" id="movil">SOR</abbr>
+                    <span id="pantalla">Sistemas Operativos<br>en Red</span>
+                </td>
+                <td rowspan="2" class="si">
+                    <abbr title="Seguridad informática" id="movil">SI</abbr>
+                    <span id="pantalla">Seguridad Informática</span>
+                </td>
             </tr>
             <tr>
-                <th>18:15 - 19:05</th>
+                <th>18:15 <br> 19:05</th>
             </tr>
             <tr>
-                <th>19:05 - 19:30</th>
-                <td colspan="5">RECREO</td>
+                <th>19:05 <br> 19:30</th>
+                <td colspan="5" id="recreo">RECREO</td>
             </tr>
             <tr>
-                <th>19:30 - 20:20</th>
-                <td rowspan="2">SR</td>
-                <td rowspan="2">SOR</td>
-                <td rowspan="2">SI</td>
-                <td>SOR</td>
-                <td rowspan="2">AW</td>
+                <th>19:30 <br> 20:20</th>
+                <td rowspan="2" class="sr">
+                    <abbr title="Servicios en Red" id="movil">SR</abbr>
+                    <span id="pantalla">Servicios en Red</span>
+                </td>
+                <td rowspan="2" class="sor">
+                    <abbr title="Sistemas Operativos en Red" id="movil">SOR</abbr>
+                    <span id="pantalla">Sistemas Operativos<br>en Red</span>
+                </td>
+                <td rowspan="2" class="si">
+                    <abbr title="Seguridad informática" id="movil">SI</abbr>
+                    <span id="pantalla">Seguridad Informática</span>
+                </td>
+                <td class="sor">
+                    <abbr title="Sistemas Operativos en Red" id="movil">SOR</abbr>
+                    <span id="pantalla">Sistemas Operativos<br>en Red</span>
+                </td>
+                <td rowspan="2" class="aw">
+                    <abbr title="Aplicaciones Web" id="movil">AW</abbr>
+                    <span id="pantalla">Aplicaciones Web</span>
+                </td>
             </tr>
             <tr>
-                <th>20:25 - 21:15</th>
-                <td>LEP</td>
+                <th>20:25 <br> 21:15</th>
+                <td class="lep">
+                    <abbr title="Inglés" id="movil">LEP</abbr>
+                    <span id="pantalla">Inglés</span>
+                </td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="6">Iván Vadillo Moreno</td>
+                <th colspan="6" id="nombre">Iván Vadillo Moreno</td>
             </tr>
         </tfoot>
     </table>
