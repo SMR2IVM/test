@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Horario</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <th>Horario</th>
-    <th>Lunes</th>
-    <th>Martes</th>
-    <th>Miercoles</th>
-    <th>Jueves</th>
-    <th>Viernes</th>
+    <table>
+        <thead>
+            <tr>
+                <th scope="row">Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>15:30 - 16:20</th>
+                <td>EIE</td>
+                <td>EIE</td>
+                <td rowspan="2">AW</td>
+                <td>SI</td>
+                <td rowspan="2">SR</td>
+            </tr>
+            <tr>
+                <th>16:25 - 17 15</th>
+                <td>LEP</td>
+                <td rowspan="3">AW</td>
+                <td>EIE</td>
+            </tr>
+            <tr>
+                <th>17:20 - 18:10</th>
+                <td rowspan="2">SOR</td>
+                <td rowspan="2">SR</td>
+                <td rowspan="2">SOR</td>
+                <td rowspan="2">SI</td>
+            </tr>
+            <tr>
+                <th>18:15 - 19:05</th>
+            </tr>
+            <tr>
+                <th>19:05 - 19:30</th>
+                <td colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <th>19:30 - 20:20</th>
+                <td rowspan="2">SR</td>
+                <td rowspan="2">SOR</td>
+                <td rowspan="2">SI</td>
+                <td>SOR</td>
+                <td rowspan="2">AW</td>
+            </tr>
+            <tr>
+                <th>20:25 - 21:15</th>
+                <td>LEP</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="6">Iván Vadillo Moreno</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
+
 </html>
