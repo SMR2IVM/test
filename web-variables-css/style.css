@@ -1,0 +1,30 @@
+/*No se puede crear un elemento raiz com tal, la manera de hacerlo es ":root"*/
+:root {
+    --colorPrimario: #8ae31e;
+    --textoPrimario: white;
+    --colorSecundario: #dcf7bc;
+    --textoSecundario: black;
+    --iconoMundo: "\1F30D";
+}
+
+body {
+    background-color: var(--colorSecundario);
+}
+
+li{
+    background-color: var(--colorPrimario);
+    color: var(--textoPrimario);
+    list-style: none;
+}
+
+li::before{
+    /*content: "🌍";*/
+    /*content: "\26e9";*/ 
+    content: var(--iconoMundo);   
+}
+/*Se puede pegar la imagen o el código si lo añadimos como "\26e9"; así como crear una variable*/
+
+li::after{
+    content: ".";
+    text-decoration: underline;
+}

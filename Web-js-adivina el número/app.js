@@ -11,7 +11,7 @@ else if (respuesta == incógnita) {
     alert("¡Correcto!");
 }
 
-else if (respuesta == "5" || respuesta == "3"){
+else if (respuesta == "5" || respuesta == "3") {
     alert("Uy! Casi! Prueba otra vez, dale a F5")
 }
 
@@ -20,3 +20,5 @@ else {
 }
 
 /*Para evitar que del if, salte luego siempre al else, las opciones de fallo deberán ser también un "else" seguidos de "if" para su nueva opción. De este modo solo ejecutará el "else" solitario si no hay más opciones.*/
+// Con dos == es "igual" pero puede tener cierta flexibilidad; con tres === debe ser identico.
+
