@@ -43,6 +43,15 @@ table>tfoot {
 .aw {
     background-color: wheat;
 }
+.es{
+    background-color: indianred;
+}
+.tc{
+    background-color: lightblue;
+}
+.ef{
+    background-color: darkslateblue;
+}
 
 th {
     border-style: solid;
