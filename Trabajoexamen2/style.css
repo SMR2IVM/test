@@ -3,11 +3,14 @@
     box-sizing: border-box;
 }
 
+
 header {
     background-color: crimson;
 }
 nav {
     background-color: grey;
+    height: 35px;
+    border-bottom: solid;
 }
 body {
     background-color: whitesmoke;
@@ -16,16 +19,29 @@ main{
     background-color: whitesmoke;
 }
 section{
+    border: solid;
+    border-color: rgb(34, 34, 34);
     background-color: whitesmoke;
 }
 aside{
     background-color: grey;
+    border-right: solid;
+    position: fixed;
+    top: 35px;
+    bottom: 0px;
+    width: 35px;
 }
 footer{
-    background-color: crimson;
+    display: none;
 }
-/*Media movil*/
-@media (max-width: 400px) {
+aside > a > span {
+    display: none;
+}
+
+
+
+/*Medio: movil*/
+@media (max-width: 350px) {
     
     header {
         position: relative;
@@ -39,17 +55,26 @@ footer{
     }
     aside {
         position: fixed;
-        bottom: 0px;
+        height: 34px;
+        top: unset;
         width: 100%;
-    }
-    footer{
-        display: none;
-    }
-    
+        border-top: solid;
+    }    
     aside > a > span {
         display: none;
     }
     nav > a > span {
         display: none;
+    }
+}
+
+/*Medio: Monitor*/
+@media (min-width: 750px) {
+    footer {
+        display: unset;
+        position: relative;
+        bottom: 0px;
+        background-color: crimson;
+
     }
 }
