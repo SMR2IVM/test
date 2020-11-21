@@ -101,6 +101,9 @@ aside>a {
         margin-bottom: 40px;
         left: 0px;
     }
+    section {
+        width: 100%;
+    }
     aside>a>span {
         display: none;
     }
