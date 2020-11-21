@@ -3,78 +3,118 @@
     box-sizing: border-box;
 }
 
+nav {
+    position: fixed;
+    background-color: grey;
+    height: 40px;
+    left: 40px;
+    border-bottom: solid;
+    padding: 4px;
+    width: calc(100% - 40px);
+    z-index: 1;
+}
 
 header {
+    position: relative;
+    padding: 2px;
     background-color: crimson;
-}
-nav {
-    background-color: grey;
-    height: 35px;
     border-bottom: solid;
+    left: 40px;
+    top: 40px;
+    width: calc(100% - 40px);
 }
+
 body {
     background-color: whitesmoke;
 }
-main{
+
+main {
+    position: relative;
     background-color: whitesmoke;
+    top: 40px;
+    left: 38px;
+    width: calc(100% - 38px);
 }
-section{
+
+section {
     border: solid;
     border-color: rgb(34, 34, 34);
     background-color: whitesmoke;
 }
-aside{
+
+aside {
     background-color: grey;
     border-right: solid;
     position: fixed;
-    top: 35px;
+    top: 0px;
     bottom: 0px;
-    width: 35px;
+    width: 40px;
+    padding: 4px;
 }
-footer{
-    display: none;
-}
-aside > a > span {
+
+footer {
     display: none;
 }
 
+aside>a>span {
+    text-decoration-color: grey;
+    display: none;
+}
+
+nav>a {
+    text-decoration: none;
+}
+
+aside>a {
+    text-decoration: none;
+}
 
 
 /*Medio: movil*/
-@media (max-width: 350px) {
-    
+
+@media (max-width: 499px) {
     header {
         position: relative;
-        top: -34px;
+        top: -40px;
+        left: 0px;
         height: 50px;
         padding: 5px;
+        width: 100%;
     }
     nav {
         position: relative;
         top: 50px;
+        left: 0;
+        width: 100%;
     }
     aside {
         position: fixed;
-        height: 34px;
+        height: 38px;
         top: unset;
         width: 100%;
-        border-top: solid;
-    }    
-    aside > a > span {
+        border-right: none;
+    }
+    main {
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    aside>a>span {
         display: none;
     }
-    nav > a > span {
+    nav>a>span {
         display: none;
     }
 }
 
+
 /*Medio: Monitor*/
-@media (min-width: 750px) {
+
+@media (min-width: 799px) {
     footer {
         display: unset;
         position: relative;
         bottom: 0px;
         background-color: crimson;
-
     }
 }
