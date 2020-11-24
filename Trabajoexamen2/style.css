@@ -17,6 +17,7 @@ nav {
 header {
     position: relative;
     padding: 2px;
+    padding-left: 5px;
     background-color: crimson;
     border-bottom: solid;
     left: 40px;
@@ -74,6 +75,7 @@ aside>a {
 
 @media (max-width: 499px) {
     header {
+        min-width: 280px;
         position: relative;
         top: -40px;
         left: 0px;
@@ -82,12 +84,14 @@ aside>a {
         width: 100%;
     }
     nav {
+        min-width: 280px;
         position: relative;
         top: 50px;
         left: 0;
         width: 100%;
     }
     aside {
+        min-width: 280px;
         position: fixed;
         height: 40px;
         top: unset;
@@ -95,6 +99,7 @@ aside>a {
         border-right: none;
     }
     main {
+        min-width: 280px;
         position: relative;
         width: 100%;
         top: 0px;

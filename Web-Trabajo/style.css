@@ -3,6 +3,11 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+#scrollTabla {
+    overflow: scroll;
 }
 
 #movil {
