@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    border-collapse: collapse;
 }
 
 nav {
@@ -26,12 +27,12 @@ header {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: slategray;
 }
 
 main {
     position: relative;
-    background-color: whitesmoke;
+    background-color: slategray;
     top: 40px;
     left: 38px;
     width: calc(100% - 38px);
@@ -40,7 +41,7 @@ main {
 section {
     border: solid;
     border-color: rgb(34, 34, 34);
-    background-color: whitesmoke;
+    background-color: slategray;
 }
 
 aside {
