@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+aside, nav, header, main, footer{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Versión para móvil. Hasta 320 px */
+
+
+
+
+
+/* Versión para tablet, de 321px a 767px */
+
+
+
+
+
+/* Versión para desktop a prtir de 768px */
+
+
