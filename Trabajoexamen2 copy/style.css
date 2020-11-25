@@ -1,3 +1,5 @@
+/*Versión de móvil*/
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -36,16 +38,6 @@ main {
     top: 63px;
     left: 40px;
     width: calc(100% - 38px);
-}
-
-section {
-    top: 0;
-    display: inline-block;
-    border: solid;
-    border-color: rgb(34, 34, 34);
-    background-color: slategray;
-    width: calc(50% - 4px);
-    float: left;
 }
 
 aside {
@@ -91,6 +83,42 @@ a:visited {
 aside>a {
     text-decoration: none;
 }
+
+
+/*¡¡¡POR AQUI!!!*/
+
+body {
+    display: flex;
+    background-color: steelblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section,
+main {
+    flex-basis: 100%;
+    flex-grow: 2;
+    padding: 15px;
+    border: solid;
+    border-radius: 1px;
+}
+
+#section1 {
+    order: 3;
+    flex-basis: 50%;
+}
+
+#section2 {
+    order: 4;
+}
+
+#section3 {
+    order: 5;
+}
+
+
+/*¡¡¡POR AQUI!!!*/
 
 
 /*Medio: movil*/
