@@ -54,19 +54,20 @@ main {
     margin-bottom: 60px;
 }
 
+section {
+    border: solid;
+}
+
 #seccion1 {
     order: 4;
-    border: solid;
 }
 
 #seccion2 {
     order: 5;
-    border: solid;
 }
 
 #seccion3 {
     order: 6;
-    border: solid;
 }
 
 aside {
@@ -138,20 +139,20 @@ aside>a {
         margin-left: 63px;
         margin-bottom: unset;
         display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     #seccion1 {
-        order: 3;
-        border: solid;
+        order: 5;
+        flex: 0 1 50%;
     }
     #seccion2 {
         order: 4;
-        border: solid;
+        flex: 0 1 50%;
     }
     #seccion3 {
-        order: 5;
-        border: solid;
-        display: flex;
-        flex-direction: column;
+        order: 3;
+        flex: 0 1 50%;
     }
     footer {
         background-color: lightslategray;
@@ -198,6 +199,16 @@ aside>a {
     }
     main {
         margin-left: 200px;
+        flex-wrap: nowrap;
+    }
+    #seccion1 {
+        order: 3;
+    }
+    #seccion2 {
+        order: 4;
+    }
+    #seccion3 {
+        order: 5;
     }
     footer {
         background-color: crimson;
