@@ -34,12 +34,16 @@ a:hover {
     border-color: var(--color1);
 }
 
-a:visited {
+a>span:hover {
+    color: var(--color1);
+}
+
+a {
     color: var(--color4);
 }
 
-a>span:hover {
-    color: var(--color1);
+a:visited {
+    color: var(--color4);
 }
 
 
