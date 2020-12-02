@@ -3,11 +3,21 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    border-collapse: collapse;
+    --color1: crimson;
+    --color2: gray;
+    --color3: rgb(216, 216, 216);
+    --color4: black;
 }
 
 body {
     display: flex;
+<<<<<<< HEAD:Preparación examen/style.css
     background-color: gray;
+=======
+    background-color: var(--color2);
+    display: flex;
+>>>>>>> fcc876320c031ee062ed272d45d7d8a57fee4626:Web Responsive/style.css
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 320px;
@@ -20,65 +30,73 @@ footer,
 section,
 nav {
     flex-basis: 100%;
-    /*Todos los elementos ocuparán el total de su pantalla (Ancho o alto dependiendo de flex direction*/
     flex-grow: 1;
     padding: 12px;
 }
 
 a:hover {
-    border-color: crimson;
+    border-color: var(--color1);
+}
+
+a>span:hover {
+    color: var(--color1);
+}
+
+a {
+    color: var(--color4);
 }
 
 a:visited {
-    color: black;
+    color: var(--color4);
 }
 
 
 /*Versión móvil*/
 
 header {
-    background-color: crimson;
+    background-color: var(--color1);
     order: 1;
 }
 
 nav {
-    background-color: gray;
+    background-color: var(--color2);
     order: 2;
 }
 
 main {
-    background-color: rgb(216, 216, 216);
+    background-color: var(--color3);
     padding: 15px;
     order: 3;
     margin-bottom: 60px;
 }
 
+section {
+    border: solid;
+}
+
 #seccion1 {
     order: 4;
-    border: solid;
 }
 
 #seccion2 {
     order: 5;
-    border: solid;
 }
 
 #seccion3 {
     order: 6;
-    border: solid;
 }
 
 aside {
     position: fixed;
-    background-color: gray;
+    background-color: var(--color2);
     width: 100%;
     bottom: 0;
     left: 0;
 }
 
 footer {
-    background-color: lightslategray;
-    order: 5;
+    background-color: var(--color1);
+    order: 6;
     display: none;
 }
 
@@ -97,10 +115,10 @@ aside>a {
 
 /*Versión de Tablet*/
 
-@media (min-width: 600px) {
+@media (min-width: 660px) {
     nav {
         position: fixed;
-        background-color: gray;
+        background-color: var(--color2);
         top: 0px;
         left: 0px;
         width: 100%;
@@ -112,7 +130,7 @@ aside>a {
     }
     aside {
         position: fixed;
-        background-color: gray;
+        background-color: var(--color2);
         left: 0px;
         top: 73px;
         bottom: unset;
@@ -124,36 +142,40 @@ aside>a {
         margin: 1px;
     }
     header {
-        background-color: crimson;
+        background-color: var(--color1);
         order: 1;
         margin-left: 63px;
         margin-top: 73px;
     }
     main {
         flex-direction: row;
-        background-color: rgb(216, 216, 216);
+        background-color: var(--color3);
         padding: 15px;
         order: 2;
         margin-left: 63px;
         margin-bottom: unset;
         display: inline-flex;
+        flex-direction: row;
+        flex-flow: wrap;
     }
     #seccion1 {
-        order: 3;
-        border: solid;
+        flex: 0 1 50%;
     }
+    /*Anotación IMPORTANTE:
+    - Las secciones están en posiciones como las indicadas en el dibujo, o lo más cercanas posibles.
+    - Igualmente, estéticamente no es bonito. Para dejar el tamaño visualmente agradable que corresponde, hay que cambiar en #seccion1
+        - flex: 0 1 50%;
+            por
+        - flex: 0 1 100%;
+    */
     #seccion2 {
-        order: 4;
-        border: solid;
+        flex: 0 1 50%;
     }
     #seccion3 {
-        order: 5;
-        border: solid;
-        display: flex;
-        flex-direction: column;
+        flex: 0 1 50%;
     }
     footer {
-        background-color: lightslategray;
+        background-color: var(--color1);
         order: 6;
         display: none;
     }
@@ -162,7 +184,7 @@ aside>a {
         text-decoration: none;
         padding: 3px;
         border-style: solid;
-        border-color: black;
+        border-color: var(--color4);
         border-width: 3px;
         border-radius: 10px;
         text-align: center;
@@ -182,7 +204,7 @@ aside>a {
         text-decoration: none;
         padding: 3px;
         border-style: solid;
-        border-color: black;
+        border-color: var(--color4);
         border-width: 3px;
         border-radius: 10px;
         text-align: center;
@@ -197,9 +219,19 @@ aside>a {
     }
     main {
         margin-left: 200px;
+        flex-wrap: nowrap;
+    }
+    #seccion1 {
+        flex: 0 1 50%;
+    }
+    #seccion2 {
+        flex: 0 1 50%;
+    }
+    #seccion3 {
+        flex: 0 1 50%;
     }
     footer {
-        background-color: crimson;
+        background-color: var(--color1);
         display: flex;
         margin-left: 200px;
     }
