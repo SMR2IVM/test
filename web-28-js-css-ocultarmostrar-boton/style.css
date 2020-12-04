@@ -1,0 +1,10 @@
+#parrafo1 {
+    color: red;
+}
+
+/*Hacemos que la clase "oculto" tenga display none. 
+Así, al añadir y quitar esa clase a un texto, este aparecerá y desaparecerá.*/
+
+.oculto{
+    display: none;
+}
